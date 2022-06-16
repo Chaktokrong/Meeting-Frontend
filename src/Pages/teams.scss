@@ -1,0 +1,161 @@
+@import "../themes.scss";
+
+.supplies-page {
+  .text-field {
+    .MuiOutlinedInput-input {
+      color: black !important;
+      font-family: $font-body;
+    }
+    .MuiInputLabel-root {
+      color: black !important;
+    }
+    .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+      border-color: #fff;
+    }
+    :hover .MuiOutlinedInput-input {
+      color: #fff;
+      font-family: $font-body;
+    }
+    :hover .MuiInputLabel-root {
+      color: black;
+    }
+    :hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+      border-color: #fff;
+    }
+    .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-input {
+      color: black;
+    }
+    .MuiInputLabel-root.Mui-focused {
+      color: black;
+      font-family: $font-body;
+    }
+    .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+      border-color: #fff;
+    }
+  }
+
+  .slash {
+    width: 4px;
+    height: 45px;
+    background-color: #fff;
+  }
+  .color {
+    color: #fff;
+    font-size: 22px;
+    // font-weight: bold;
+  }
+
+  .stack-btn {
+    .btn-add {
+      text-transform: none;
+      border-radius: 6px;
+      background-color: #fff;
+
+      .MuiButton-startIcon {
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+      }
+
+      .btn-text {
+        color: $gray-color;
+        margin: 0px 5px 0px 5px;
+        font-family: $font-body;
+      }
+    }
+  }
+  .btn-search {
+    border-radius: 5px;
+    background-color: white;
+
+    .btn-text-field {
+      display: flex;
+      align-items: center;
+      width: 300px;
+      background-color: #fff;
+      border-radius: 10px;
+      font-family: $font-body;
+    }
+  }
+
+  .container {
+    margin-top: 20px;
+
+    .table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0px 8px;
+
+      .header-row {
+        .header-title {
+          padding: 10px;
+          border: none;
+          font-size: $font-Size-Subtitle;
+          font-family: $font-title;
+          color: $white-color;
+        }
+      }
+
+      .body {
+        box-shadow: none;
+        border-radius: 10px !important;
+
+        .body-row {
+          background-color: #fff;
+          border-radius: 10px;
+
+          .body-title {
+            padding: 10px;
+            border: none;
+            font-size: $font-size-articles;
+            font-family: $font-body;
+            color: gray;
+
+            .status-Pending {
+              font-weight: bold;
+              color: red;
+            }
+
+            .status-Rejected {
+              font-weight: bold;
+              color: #006fff;
+            }
+            .status-Approval {
+              font-weight: bold;
+              color: #d7e4fc;
+            }
+          }
+        }
+      }
+
+      .body-odd {
+        box-shadow: none;
+
+        .body-row {
+          background-color: #d7e4fc;
+
+          .body-title {
+            padding: 10px;
+            border: none;
+            font-size: $font-size-articles;
+            font-family: $font-body;
+            color: gray;
+
+            .status-Pending {
+              font-weight: bold;
+              color: red;
+            }
+
+            .status-Rejected {
+              font-weight: bold;
+              color: #006fff;
+            }
+            .status-Approval {
+              font-weight: bold;
+              color: #20d819;
+            }
+          }
+        }
+      }
+    }
+  }
+}

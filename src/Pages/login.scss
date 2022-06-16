@@ -1,0 +1,143 @@
+@import '../themes.scss';
+
+.login-page {   
+    width: 100%;
+    height: 100vh;
+    background-color: #2AEA00;
+
+    .text-field {
+
+        background-color: $color-text-field;
+        
+        .MuiOutlinedInput-input {
+            color: white !important;
+            font-family: $font-body;
+            font-size: 13px;
+        }   
+        .MuiInputLabel-root {
+            color: white !important;
+        }        
+        .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+            border-color: $color-text-field;
+        }        
+        :hover .MuiOutlinedInput-input {
+            color: #fff;
+            font-family: $font-body;
+        }        
+        :hover .MuiInputLabel-root {
+            color: white;
+        }        
+        :hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+            border-color: $color-text-field;
+        }
+        .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-input {
+            color: white;
+        }        
+        .MuiInputLabel-root.Mui-focused {
+            color: white;
+            font-family: $font-body;
+        }        
+        .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+            border-color: $color-text-field;
+        }
+    }
+
+    
+    .background-image {       
+        // background-image: url("../Assets/backgroundImages.png");
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: 50% 50%;
+        position: fixed;
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    
+    }
+    
+    .container {
+        width: 100%;
+        height: 95%;
+        position: relative;
+        display: flex;
+        justify-content: center;           
+        
+        .login-container {
+            width: 320px;   
+            display: flex;
+            justify-content: center;
+            flex-direction: column;    
+
+            .login {
+                border-radius: 15px;
+                width: 100%; 
+                padding: 25px 0px 25px 0px;
+                background-color: #fff;
+
+
+                .box-logo {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .box-text {
+                    display: flex;
+                    justify-content: center;
+
+                    .title {
+                        color: $font-color;
+                        // font-weight: bold;
+                        font-family: $font-title;
+                    }
+
+                    .sub-title {
+                        color: #fff;
+                    }
+                }
+
+                .box-login {
+                    display: flex;
+                    justify-content: center;
+
+                    .field-email {
+                        padding: 5px 6px 5px 6px;
+                        background-color: #0B82C4;
+                        border-radius: 15px;
+
+                        .icon {
+                            color: #fff;
+                        }
+                    }                    
+
+                    .btb-sign-in {
+                        border-radius: 15px;
+                        background-color: $color-text-field;
+                        font-family: $font-title;
+                        color: #fff;
+                        text-transform: none;
+                        font-size: 18px;
+                    }
+                }
+
+                .forgot-password {
+                    font-family: $font-body;
+                    color: $primary-color;
+                    font-weight: bold;
+                }
+            }
+
+        }
+
+
+    }
+
+    .footer {
+        font-family: $font-body;    
+        font-weight: bold;    
+    }
+
+}
+
+

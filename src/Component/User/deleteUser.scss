@@ -1,0 +1,47 @@
+@import "../../themes.scss";
+
+.delete-user {
+  .title {
+    font-weight: bold;
+    color: $primary-color;
+    font-family: $font-title;
+    font-size: $font-Size-title;
+  }
+  .body-title {
+    color: $primary-color;
+  }
+
+  .body-void {
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $font-english-title;
+  }
+
+  .btn-void {
+    background-color: rgb(255, 43, 43);
+    color: white;
+    border: none;
+    font-size: $font-Size-Subtitle;
+    // &:hover {
+    //   background-color: #0b82c4;
+    // }
+  }
+  .body-text {
+    font-family: $font-body;
+    font-size: $font-size-articles;
+    // font-weight: bold;
+    color: rgb(80, 80, 80);
+  }
+  .btn-delete {
+    font-size: $font-Size-Subtitle;
+  }
+  .text-input {
+    .MuiOutlinedInput-input {
+      font-family: $font-english-title !important;
+      //   font-weight: bold;
+      font-size: $font-size-articles;
+      color: gray;
+    }
+  }
+}

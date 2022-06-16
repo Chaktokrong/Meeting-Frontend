@@ -1,0 +1,35 @@
+@import '../../themes.scss';
+
+.container-users {
+    margin-top: 20px;
+
+    .table-head {
+        // width: 100%;
+        // border-collapse: separate;
+        // border-spacing: 0px 8px;
+        
+
+        .header-row {            
+            .header-title {
+                padding: 10px;
+                font-size: $font-Size-Subtitle;
+                font-weight: bold;
+            }
+        }
+        
+        .body {
+            box-shadow: none;
+
+            .body-row {       
+                background-color: #fff;
+    
+                .body-title {
+                    padding: 10px;
+                    border: none;
+                    font-size: $font-Size-Subtitle;
+                }
+            }
+        }
+    
+    }
+}

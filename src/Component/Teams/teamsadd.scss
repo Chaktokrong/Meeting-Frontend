@@ -1,0 +1,58 @@
+@import "../../themes.scss";
+
+.supplies {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background-color: #fff;
+  box-shadow: 30px;
+  border-radius: 10px;
+  padding: 20px;
+
+  .header-title {
+    color: $black-color;
+  }
+
+  .title {
+    color: $black-color;
+    font-size: $font-Size-title;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary-color;
+    .make-paper {
+      flex-wrap: "wrap";
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      box-shadow: 15px;
+      direction: row;
+      justify-content: center;
+      .icon-camara {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 40%;
+      }
+    }
+  }
+
+  .Sub-title {
+    //color: $black-color;
+    color: black;
+    font-size: $font-size-articles;
+    font-family: $font-body;
+  }
+  .btn-create {
+    color: white;
+    width: 100%;
+    font-size: $font-Size-Subtitle;
+    // font-weight: bold;
+    background-color: $font-title-color;
+    &:hover {
+      background-color: $font-title-color;
+    }
+  }
+}

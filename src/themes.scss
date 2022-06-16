@@ -1,0 +1,72 @@
+// theme color
+$color-text-field: #0b82c4;
+
+// -----------Color
+$font-title-color: #0b82c4;
+$primary-color: #0969a0;
+$secondary-color: #3c64f6;
+$font-color: #0969a0;
+
+$black-color: #3d3d3d;
+$gray-color: gray;
+$white-color: #ffffff;
+$radius: 10px;
+
+//background Color
+$background-menu: #fff;
+$background-menu-dark: black;
+$background-table-modal: #def6d9;
+$background-color: #0969a0;
+$background-menu-active: #d7e4fc;
+$background-color-green: #0b82c4;
+
+//font
+$font-title: "CenturyFont";
+$font-body: "Bayon";
+$font_input: "Kantumruy";
+$font-english-title: "CenturyFont";
+
+//font-size
+$font-Size-title: 22px;
+$font-Size-Subtitle: 17px;
+$font-size-articles: 16px;
+
+//font-size-icon
+$font-size-icon: 25px;
+
+// Login Page
+
+@mixin desktop {
+  @media (min-width: #{1025px}) and (max-width: #{1650px}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{769px}) and (max-width: #{1024px}) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: #{426px}) and (max-width: #{768px}) {
+    @content;
+  }
+}
+
+@mixin mobile-large {
+  @media (min-width: #{426px}) and (max-width: #{600px}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{377px}) and (max-width: #{425px}) {
+    @content;
+  }
+}
+
+@mixin mobile-small {
+  @media (min-width : #{0px}) and (max-width: #{376px}) {
+    @content;
+  }
+}

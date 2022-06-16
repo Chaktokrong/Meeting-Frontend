@@ -1,0 +1,86 @@
+@import "../../themes.scss";
+
+.modal-user {
+  display: block;
+
+  .text-field {
+    .MuiOutlinedInput-input {
+      // color: black !important;
+      font-family: $font-input;
+      font-size: $font-size-articles;
+    }
+    .MuiInputLabel-root {
+      // color: black !important;
+    }
+    .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+      border-color: rgb(173, 173, 173);
+    }
+    :hover .MuiOutlinedInput-input {
+      // color: ;
+      // font-family: $font-body;
+    }
+    :hover .MuiInputLabel-root {
+      color: black;
+      // font-family: $font-body;
+    }
+    :hover .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+      border-color: rgb(173, 173, 173);
+    }
+    .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-input {
+      color: black;
+    }
+    .MuiInputLabel-root.Mui-focused {
+      color: black;
+    }
+    .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+      border-color: $primary-color;
+    }
+  }
+
+  .title {
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: $font-Size-title;
+    font-weight: bold;
+    color: $primary-color;
+    font-family: $font-title;
+  }
+  .sub-title {
+    font-size: $font-Size-Subtitle;
+    padding-bottom: 5px;
+  }
+  .make-paper {
+    flex-wrap: "wrap";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 15px;
+    .icon-camara {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 40%;
+    }
+  }
+
+  .btn-create {
+    color: white;
+    width: 100%;
+    font-size: $font-Size-Subtitle;
+    // font-weight: bold;
+    background-color: $font-title-color;
+    &:hover {
+      background-color: $font-title-color;
+    }
+  }
+  .select-date {
+    .MuiOutlinedInput-input {
+      font-family: $font-english-title !important;
+      font-weight: bold;
+      font-size: $font-size-articles;
+    }
+    .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+      border-color: $primary-color;
+    }
+  }
+}

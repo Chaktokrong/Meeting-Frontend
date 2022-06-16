@@ -1,0 +1,32 @@
+@import "../../themes.scss";
+
+.style-modal-add-event {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 650px;
+  height: fit-content;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+
+  .modal-title-add-events {
+    text-align: center;
+    font-size: 24px;
+    color: #0b82c4;
+  }
+
+  .add-item {
+    background-color: #0b82c4;
+    width: 100%;
+    padding: 8px;
+    color: white;
+  }
+  .card-icon {
+    margin-bottom: -40px;
+    font-size: 30px;
+    cursor: pointer;
+    color: $primary-color;
+  }
+}
